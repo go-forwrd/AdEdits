@@ -1,0 +1,34 @@
+# Brand kit TEMPLATE. Copy to brands/<yourbrand>.toml, fill in every "YOUR ..." value,
+# and set `"brand": "<yourbrand>"` in your EDPs. See docs/BRAND_SETUP.md.
+#
+# The kit styles the render (accent color, logo) and LINTS the copy: any VO line or overlay
+# with numbers/claim language must be covered by [claims].approved, so fabricated or stale
+# stats get caught before render, not after a human notices.
+#
+# Your real kit (brands/<yourbrand>.toml) is git-ignored; only this template is committed.
+
+[brand]
+name = "YOUR BRAND"            # exactly as it should appear on screen
+url = "yourbrand.com"          # used in CTAs / end cards
+
+[style]
+highlight = "#EA6024"          # YOUR accent hex: callout keywords, stars, CTA pills, captions
+# logo_white = "assets/brand/logo_white.png"   # for dark backgrounds
+# logo_dark = "assets/brand/logo_dark.png"     # for light backgrounds
+
+[voice]
+no_em_dash = true              # set false if your house style allows em dashes
+# Words your brand never uses in on-screen copy or VO. Edit to taste.
+banned_words = ["best", "revolutionary", "disruptive", "game-changer"]
+
+[claims]
+# Approved, product-true facts, exactly as you're allowed to state them (from your product
+# page, reviews dashboard, policies). The linter normalizes spoken numbers
+# ("four point seven stars" == "4.7 stars"). REPLACE these placeholders with your own;
+# anything not listed here gets flagged.
+approved = [
+  "4.7 stars",                 # e.g. your real average rating
+  "1,000+ verified reviews",   # e.g. your real review count
+  "lifetime warranty",         # e.g. your real guarantee
+  "free shipping over $50",    # e.g. your real offer
+]
