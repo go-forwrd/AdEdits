@@ -23,6 +23,9 @@ at a high bar. It ships **brand-neutral**: you plug in your own brand (see below
 
 ## Quickstart (3 commands)
 
+> **Never used this before?** Start with the step-by-step
+> [Getting Started guide](docs/GETTING_STARTED.md): install, brand setup, and your first video.
+
 ```bash
 pip install -e .            # in a Python 3.12 venv; FFmpeg required (brew/apt install ffmpeg)
 forwrdcut init              # scaffold a project: config, folders, example brand kit
@@ -96,7 +99,7 @@ Follow [`docs/BRAND_SETUP.md`](docs/BRAND_SETUP.md); the short version:
 
 ```
 AGENTS.md          the editor's brain (agents read this first)
-docs/              EDITING_PLAYBOOK · PLATFORMS (per-format best practices) · ENGINE · research/
+docs/              GETTING_STARTED · BRAND_SETUP · EDITING_PLAYBOOK · PLATFORMS (per-format best practices) · ENGINE · research/
 src/forwrdcut/     analysis · strategy · render · audio · media · mcp · cli
 brands/            example.toml brand-kit template (copy it to brands/<yourbrand>.toml)
 assets/            Inter font (OFL) · procedural music beds · put licensed music in music/licensed/
